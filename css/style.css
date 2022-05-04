@@ -15,7 +15,7 @@
 .header{
     display:flex;
     flex-direction: row;
-    background-image: url(../images/header.jpg);
+    background-image: radial-gradient( circle 993.4px at 10% 20%, rgba(255,206,27,0.44) 0%, rgba(255,255,255,1) 92.6% );
     align-items: center;
     background-position: left;
     font-family: 'arkham';
@@ -29,8 +29,6 @@
     font-size: 1.5rem;
     color: white;
     background-color: black;
-    align-self: flex-end;
-    position: sticky;
     top: 0; 
     margin-bottom: 2rem;
 }  
@@ -412,7 +410,7 @@
         background-color: #7c4c1d;
         flex-direction: column;
         }
-        
+
 .liststyle{
         font-family: 'arkham';
         font-size: 1.5rem;
