@@ -1,3 +1,5 @@
+@import "../propiedades-sass/mixins";
+
 *{
     margin: 0;
     padding: 0%;
@@ -41,14 +43,10 @@
             background-image: url(../images/subtle-wood.gif)
         } 
 .pfont{
-            font-size: 25px;
-            color: #f3e0ce;
-            font-family: 'aliseo';
-            padding-top: 10px;
-            }    
-.pself{
-            align-self: flex-start;
-        }        
+    
+ @include pfont( 25px,#f3e0ce,'aliseo',10px,flex-start);
+        }
+
 .h1body{
             font-family: 'arkham';
             font-size: 35px;
@@ -134,3 +132,20 @@
         display: flex;
         flex-direction: row;
     }
+
+.lugar{
+    color: #f3e0ce;
+    background-color: #7c4c1d;
+    margin-left: 30px;
+    border: solid;
+    margin: 40px;
+    padding: 25px;
+}
+
+.plugar{
+    font-size: 25px;
+    color: #f3e0ce;
+    font-family: 'aliseo';
+    padding-top: 10px;
+    font-style: italic;
+}

@@ -1,3 +1,6 @@
+@import "../propiedades-sass/extend";
+
+
 .videosect{
     padding-top: 100px;
 }
@@ -27,18 +30,14 @@
 
 
 .flexleft{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    @extend %flexleft;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px; 
 
 }
 .flexright{
-    display: flex;
-    flex-direction: row;
-    align-items:flex-end;
+    @extend %flexright;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;

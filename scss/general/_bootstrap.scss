@@ -1,7 +1,8 @@
+@import"../propiedades-sass/mapa.scss";
 
 .bootcard{
-    color: #f3e0ce;
-    background-color: #7c4c1d;
-    margin-left: 30px;
-    border: solid;
+    color:map-get($bootcard,fcolor );
+    background-color: map-get($bootcard,bg-color);
+    margin-left: map-get($bootcard , mg-left );
+    border: map-get($bootcard, borde );
   }
