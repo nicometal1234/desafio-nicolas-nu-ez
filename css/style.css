@@ -7,10 +7,12 @@
 @font-face {
   font-family: "arkham";
   src: url(../fonts/Arkham_reg.TTF);
+  font-display: swap;
 }
 @font-face {
   font-family: "aliseo";
   src: url(../fonts/aliseo/FONTE___.TTF);
+  font-display: swap;
 }
 .header {
   display: flex;
@@ -19,7 +21,7 @@
   align-items: center;
   background-position: left;
   font-family: "arkham";
-  font-size: 40px;
+  font-size: 25px;
   width: 100%;
   height: 100%;
 }
@@ -440,7 +442,6 @@
   }
 
   .navbar {
-    display: none;
     align-self: flex-end;
     position: sticky;
     top: 0;
