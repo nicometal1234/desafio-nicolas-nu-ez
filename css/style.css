@@ -6,6 +6,17 @@
   color: #f3e0ce;
 }
 
+@media screen and (max-width: 450px) {
+  .imgtext {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 960px) {
+  .imgtext {
+    align-items: center;
+  }
+}
+
 @font-face {
   font-family: "arkham";
   src: url(../fonts/Arkham_reg.TTF);
@@ -180,12 +191,6 @@ h5 {
     font-family: "arkham";
     padding-top: 10px;
   }
-}
-
-.pself {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .videosection {
