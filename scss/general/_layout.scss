@@ -1,75 +1,134 @@
-@import "../propiedades-sass/extend";
-
-
-.videosect{
-    padding-top: 100px;
+@mixin flexgalery ($display,$flex-direction,$justify) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content:$justify ;
 }
-.imagetext{
-    margin-top: 3px;
-    font-size: 15px;
-    font-family: 'arkham';
-    color: #f3e0ce;  
-    padding-left: 25px;
-}
-.viewport{
-    
-    width: 420px;
-    height: 320px; 
-    padding-top: 20px;
-    padding: 25px;
-  
 
+@mixin flex ($display,$flex-direction,$align) {
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: $align;
     
 }
-.viewport2{
-   
-    height: 450px;
-    width: 300px;
-    margin-right: 0px;
-}
 
+@mixin img ($width,$height,$border){
+    width: $width;
+    height: $height;
+    border-radius: $border;
+}
 
 .flexleft{
-    @extend %flexleft;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px; 
+    @include flex(flex,row,flex-start );
+    padding-left: 15px;
+   
+        @media screen and (max-width: 450px){
 
+            @include flex(flex,column,flex-start );
+        }
+        @media screen and (min-width: 451px) and (max-width:960px){
+
+            @include flex(flex,column,flex-start);
+        }     
+          
 }
 .flexright{
-    @extend %flexright;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-
-}
     
-.jself{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include flex(flex,row,flex-end );
+    padding-right: 15px;
+
+        @media screen and (max-width: 450px){
+
+        @include flex(flex,column,flex-end );
+    }
+        @media screen and (min-width: 451px) and (max-width:960px){
+
+        @include flex(flex,column,flex);
+    }
+   
 }
 
-.divcontainer{
-   
-    padding-left: 10px;
-    border: solid;
-    color: #f3e0ce;
-    background-color: rgba(124,76,29,0.4);
-    display:grid ;
-    margin-top: 2rem;
-    margin-right: 3.5rem;
-    margin-left: 1.5rem;
-    margin-bottom: 60px;
+
+.flexgalery{
+    @include flexgalery(flex,row,flex-start);
+    margin: 20px;
+
+    @media screen and (max-width: 450px){
+
+        @include flexgalery(flex,column,center);
+    }
+    @media screen and (min-width: 451px) and (max-width:960px){
+
+        @include flexgalery(flex,column,center);
+
+    }     
+          
+}
+
+.img{
+    @include img(300px,200px,50%);
+
+    @media screen and (max-width: 450px){
+
+        @include img(200px,150px,50%);
+      
+    }
+    @media screen and (min-width: 451px) and (max-width:960px){
+
+        @include img(250px,150px,50%);
+               
+    }      
+}
+.img2{
+    @include img(250px,300px,50%);
+
+    @media screen and (max-width: 450px){
+
+        @include img(100px,255px,50%);
+    }   
+
+    @media screen and (min-width: 451px) and (max-width:960px){
+
+        @include img( 150px,300px,50%);
+    }     
+          
+}
+.img3{
+    @include img(200px,250px,50%);
+    padding-left: 25px; 
+
+    @media screen and (max-width: 450px){
+
+        @include img(100px,150px,50%);
     }
 
-.flexboard{
-background-color: rgba(124,76,29,0.4);
-border: solid;
-color: #f3e0ce;
-padding-left: 10px;
-margin-top: 2rem;
-margin-right: 3.5rem;
-margin-left: 1.5rem;
-margin-bottom: 60px;
+    @media screen and (min-width: 451px) and (max-width:960px){
+
+        @include img( 150px,275px,50%);
+    }  
+}
+
+.imgrelleno{
+    @include img(500px,300px,0%);
+    padding-left: 60px;
+
+    @media screen and (max-width: 450px){
+
+       display: none;
+    }
+    @media screen and (min-width: 451px) and (max-width:960px){
+       
+        display: none;
+    }
+
+}
+
+.lugar{
+    display: flex;
+    flex-direction: column;
+    border: solid whitesmoke 3px;
+    background-color: rgba(124, 76, 29, 0.8);
+    justify-content: center;
+    margin: 25px;
+    
+
 }

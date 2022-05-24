@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "arkham";
+    src: url(../fonts/Arkham_reg.TTF);
+}
+@font-face {
+    font-family: "aliseo";
+    src: url(../fonts/aliseo/FONTE___.TTF);
+    }
+
+
+body{
+    background-image: url("../images/subtle-wood.gif");
+
+        header{
+        display: flex;
+        flex-direction: row;
+        background-image: url(../images/header.jpg);
+        align-items: center;
+        background-position: center;
+        
+            h1{
+               font-size: 50px;
+               font-family: 'arkham';
+                color: black;
+            
+                @media screen and (max-width: 450px) {
+                    font-size: 25px;
+                }                    
+                @media screen and (min-width: 451px) and (max-width:960px){
+                    font-size: 30px;
+                }
+                
+            }
+
+        }
+
+    }
+            
+    
+
+
+
+@mixin textstyle ( $font,$color,$family,$padding ){
+    font-size: $font;
+    color: $color;
+    font-family: $family;
+    padding-top: $padding;
+   
+    
+}
+
+h2{
+    @include textstyle(40px, #f3e0ce,'arkham',10px);
+    text-decoration: underline;
+    padding-left: 25px;
+       
+        @media screen and (max-width: 450px) {
+
+            @include textstyle(25px, #f3e0ce,'arkham',10px);
+        }
+
+        @media screen and (min-width: 451px) and (max-width:960px){
+            
+            @include textstyle(35px, #f3e0ce,'arkham',10px);
+
+        }    
+    
+}
+h3{
+    @include textstyle(30px, #f3e0ce,'arkham',10px);
+    padding-left: 25px;
+
+      @media screen and (max-width: 450px) {
+
+        @include textstyle(15px, #f3e0ce,'arkham',10px);
+    }
+      @media screen and (min-width: 451px) and (max-width:960px){
+    
+      @include textstyle(25px, #f3e0ce,'arkham',10px);
+
+    }
+}
+
+h4{
+    @include textstyle(25px,#f3e0ce,'arkham',10px );
+    text-decoration: underline;
+
+    
+    @media screen and (max-width: 450px) {
+
+        @include textstyle(20px, #f3e0ce,'arkham',10px);
+    }
+      @media screen and (min-width: 451px) and (max-width:960px){
+    
+      @include textstyle(25px, #f3e0ce,'arkham',10px);
+    }
+      
+   
+}
+
+h5{
+    @include textstyle(15px,#f3e0ce,'arkham' ,10px);
+    text-align: center;
+
+    @media screen and (max-width: 450px) {
+
+    text-align: start;
+     }
+    @media screen and (min-width: 451px) and (max-width:960px){
+    
+    text-align: start;
+
+    }
+   
+}
+
+.pfont{
+    @include textstyle(25px,#f3e0ce,'aliseo',10px);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    
+    @media screen and (max-width: 450px) {
+
+        @include textstyle(15px, #f3e0ce,'arkham',10px);
+    }
+      @media screen and (min-width: 451px) and (max-width:960px){
+    
+      @include textstyle(20px, #f3e0ce,'arkham',10px);
+    }
+}
+
+.plugar{
+    @include textstyle(25px,#f3e0ce,'aliseo',10px);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: italic;
+    
+    @media screen and (max-width: 450px) {
+
+        @include textstyle(15px, #f3e0ce,'arkham',10px);
+    }
+      @media screen and (min-width: 451px) and (max-width:960px){
+    
+      @include textstyle(20px, #f3e0ce,'arkham',10px);
+    }
+}
+
+.pself{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    
+}
+
+.videosection{
+    width: 400px;
+    height: 300px;
+    padding-left: 25px;
+
+    
+    @media screen and (max-width: 450px) {
+
+        width: 200px;
+        height: 150px;
+    }
+      @media screen and (min-width: 451px) and (max-width:960px){
+       
+        width: 200px;
+        height: 250px;
+    }
+   
+}
+.main{
+    border: solid;
+    color: #f3e0ce;
+    background-color: rgba(124, 76, 29, 0.5);
+    margin: 25px;
+}
+
+footer{
+    background-position: 100%;
+    background-image: url(../images/footer.jpg);
+
+
+    h3{
+        color: black;
+        @media screen and (max-width: 450px) {
+            font-size: 15px;
+        }                    
+        @media screen and (min-width: 451px) and (max-width:960px){
+            font-size: 25px;
+        }   
+    }  
+}

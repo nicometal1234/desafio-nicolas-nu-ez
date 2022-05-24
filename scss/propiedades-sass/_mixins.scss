@@ -1,9 +1,0 @@
-@mixin pfont  ($font,$color,$family,$padding,$align){
-    
-    font-size: $font;
-    color: $color;
-    font-family: $family;
-    padding-top: $padding;    
-    align-self: $align;
-}
-

@@ -1,6 +1,11 @@
 /*nesting*/ 
-@import "../scss/general/_general.scss";
+
+@import "../scss/propiedades-sass/extend";
+@import "../scss/propiedades-sass/mapa.scss";
+@import "../scss/general/estilos-generales";
 @import "../scss/general/layout";
-@import "../scss/media/media-mobile";
-@import "../scss/media/media-tablet";
 @import "../scss/general/bootstrap";
+
+
+
+

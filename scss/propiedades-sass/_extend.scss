@@ -1,11 +1,15 @@
-%flexleft{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+
+%imgtext{
+    margin-top: 3px;
+    font-size: 15px;
+    font-family: 'arkham';
+    color: #f3e0ce; 
+        
 }
 
-%flexright{
-    display: flex;
-    flex-direction: row;
-    align-items:flex-end;
-}
+
+.imgtext{
+
+    @extend %imgtext;
+
+}     
