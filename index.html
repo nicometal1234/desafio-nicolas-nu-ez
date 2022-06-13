@@ -27,22 +27,38 @@
         <h1>Gelderland: La venganza</h1>        
     </header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <nav class="nav nav-pills flex-column flex-sm-row ">
-                <a class=" flex-sm-fill text-sm-center nav-link pfont " href="index.html">Inicio</a>
-                <a class=" flex-sm-fill text-sm-center nav-link pfont " href="pages/personajes-y-organizaciones.html">Personajes y Organizaciones</a>
-                <a class=" flex-sm-fill text-sm-center nav-link pfont " href="pages/npc.html">NPCs</a>
-                <a class=" flex-sm-fill text-sm-center nav-link pfont " href="pages/sesiones.html">sesiones</a>
-                <a class=" flex-sm-fill text-sm-center nav-link pfont " href="pages/lugares.html">Lugares</a>
-              </div>
-            </div>
-          </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand pfont" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link  pfont" aria-current="page" href="pages/personajes-y-organizaciones.html">Personajes y Organizaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pfont" href="pages/lugares.html">Lugares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pfont" href="pages/npc.html">Npc</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle pfont" href="pages/sesiones.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Sesiones
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item pfont" href="pages/sesiones.html">Sesion 0</a></li>
+                <li><a class="dropdown-item pfont" href="pages/sesion-1.html">Sesion 1</a></li>
+                <li><a class="dropdown-item pfont" href="pages/sesion-2.html">Sesion 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
     
     
 <section class="divcontainer animate__animated animate__fadeInUp">
@@ -50,29 +66,30 @@
 <main class="main">         
     <h2>¿Que es Gelderland?</h2>
     
-    <article class="flexright">   
-        <p class="pfont pself" >Gelderland era conocida en todo el mundo como una Ciudad Maravillosa, Un bastion de justicia, seguridad y honor.
+    <article> 
+      <div class="imgleft">
+        <img src="images/gelderland.jpg" alt="la ciudad de gelderland, es imponente" title="Gelderland" class="img"  >
+        <h5>Gelderland</h5> 
+    </div>  
+        <p class="pfont">Gelderland era conocida en todo el mundo como una Ciudad Maravillosa, Un bastion de justicia, seguridad y honor.
                 Pero a su vez, albergaba una cantidad enorme de secretos 
                 que solo eran conocidos por los miembros del ejercito que protegia la ciudad.
                 Uno de ellos era el que el gobernante de la ciudad, el Rey Godfrey, en realidad era una marioneta,
                 un señuelo y un simple empleado de los verdaderos gobernantes de la ciudad, El Gremio de Cazadores.</p>
     
-    <div class="imgtext ">
-        <img src="images/gelderland.jpg" alt="la ciudad de gelderland, es imponente" title="Gelderland" class="img"  >
-        <h5>Gelderland</h5> 
-    </div>
+    
         </article>
 
-<article class="flexleft">
-    <div class="imgtext ">
-       <img src="images/rey-godfrey.jpg" alt="Imagen del rey godfrey, hombre de cabello castaño" title="Rey Godfrey " class="img">
-       <h5>rey-godfrey</h5>
-    </div>
+<article>
 
        <p class="pfont">El origen de este gremio se remonta desde la fundacion de gelderland segun el circulo de oficiales. 
         Este selecto grupo es el cual gobierna a la ciudad desde la sombras.Sus objetivos son un misterio, 
         pero gobiernan sabiamente la ciudad, y nunca han dado señales de ser corruptos o malvados.  
        </p>
+       <div class="imgright">
+        <img src="images/rey-godfrey.jpg" alt="Imagen del rey godfrey, hombre de cabello castaño" title="Rey Godfrey " class="img">
+        <h5>rey godfrey</h5>
+     </div>
 
 </article>  
 
@@ -85,41 +102,42 @@
 
         <h2 >Los nuevos Habitantes</h2>
 
-<article class="flexright">
-    <p class="pfont pself ">
+<article>
+  <div class="imgleft">
+    <img src="images/los-nuevos-enemigos.jpg" alt="nuevos enemigos, criatura casi informe, nueva en este mundo" title="nuevos enemigos" class="img">
+    <h5 >Nuevos Enemigos</h5>
+  </div>
+    <p class="pfont">
         Pero no solo llegaron enemigos nuevos. Nuevas razas jamas antes vistas 
     tambien llegaron y ayudaron a los habitantes de nuestro mundo a combatir el nuevo mal.
     Estas razas variopintas se declararon aliadas casi automaticamente del nuevo mundo al que llegaron, 
     e hicieron mencion al hecho de que estas horridas criaturas eran, en su mayoria, sirvientes, 
     o titeres de unas deidades conocidas como: Los Dioses antiguos. 
     </p>
-    <div class="imgtext">
-      <img src="images/los-nuevos-enemigos.jpg" alt="nuevos enemigos, criatura casi informe, nueva en este mundo" title="nuevos enemigos" class="img">
-      <h5 >Nuevos Enemigos</h5>
-    </div>
+    
 
 </article>
 
 <h2 >Los Nuevos Dioses</h2>
-<article class="flexleft">
-    <div class=imgtext>
-        <img src="images/dioses-antiguos.jpg"  alt="Los nuevos dioses llegados a la tierra, son horribles e indescriptibles" title="dioses antiguos" class="img2">
-        <h5>Dioses Antiguos</h5>  
-    </div>
-<p class="pfont pself">Estos Dioses Antiguos no es que sean activamente malignos, solo que, creen que han llegado a nuestro mundo para ser adorados, ya que no se sabe el por que hacen las cosas que hacen. 
+<article>
+  <div class=imgright>
+    <img src="images/dioses-antiguos.jpg"  alt="Los nuevos dioses llegados a la tierra, son horribles e indescriptibles" title="dioses antiguos" class="img2">
+    <h5>Dioses Antiguos</h5>  
+</div>    
+<p class="pfont">Estos Dioses Antiguos no es que sean activamente malignos, solo que, creen que han llegado a nuestro mundo para ser adorados, ya que no se sabe el por que hacen las cosas que hacen. 
         Y solo se mueven como una masa caotica que busca hacer daño permanente y conquistar todo lo que exista.
         A estos Dioses se les "oponen" los llamados Dioses Arquetipicos, al contrario de sus homonimos "antiguos" 
         se cree que estos dioses son bondadosos y que benefician a aquellos que les sirven de maneras mas "humanas" que los malvados antiguos.</p>
-   
+        
     
 </article>    
-<h2 class="h1body">Actualidad</h2>
+<h2>Actualidad</h2>
 <p class="pfont "> Han pasado 1000 años de la destruccion de Gelderland, y actualmente ambos mundos parecen una sombra de lo que eran anteriormente, 
     pero al parecer, la llegada de unos heroes de lo que parece ser, el pasado, puede cambiar el curso de la guerra.
     Pero eso, es la historia que se vive actualmente, y aun, no se sabe lo que deparara el destino.
 </p>
  </main>
- </section>
+
 
 
 
